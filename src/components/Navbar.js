@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default function Navbar(props) {
   return (
@@ -14,7 +15,7 @@ export default function Navbar(props) {
               <a className={`nav-link active text-${props.mode==='dark'?'white':'black'}`} aria-current="page" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className={`nav-link text-${props.mode==='dark'?'white':'black'}`} href="/">Link</a>
+              <Link className={`nav-link text-${props.mode==='dark'?'white':'black'}`} to="/about">Link</Link>
             </li>
           </ul>
           <form className="d-flex" role="search">
