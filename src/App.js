@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
-import Navbar from './components/Navbargit';
+import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
 import About from './components/About';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-//update
+//updatenpm
 function App() {
   const [mode, setmode] = useState('light');
   const [text, setText] = useState('black');
